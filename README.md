@@ -11,6 +11,7 @@ Complete Django CRUD Operations.<br/>
 ## Descrição do Projeto
 <p align="rigth">Tutorial de técnidas de CRUD em Framework Django, utilizando BootStrap, Python e PostegreSql.<br/>
 Começando pela instalação dos softwares utilizados e finalizando no processo de deletar informações do banco de dados através de botões ná página html.</p><br/>
+<p align="rigth">Ao término deste vídeo você vai ter boas noções de utilização do PostgreSlq e de como fazer uma página de criar, atualizar e deletar informações do banco de dados.</p><br/>
 
 <h2 align="left">💻 SoftWares Utilizados</h2>
     <ul>
