@@ -1,0 +1,21 @@
+• manutencaomf
+|
++---• requisicao (app folder)
+|   |
+|   +--• migration (includes files relaterd to migrations)
+|   |
+|   +--• templates
+|   |  +--• requisicao
+|   |  |  |--base.html
+|   |  |  |--requisicao_form.html
+|   |  |  |--requisicao_list.html
+|   |     
+|   |- models.py
+|   |- forms.py
+|   |- urls.py
+|   |- views.py
+|
++---• manutencaomf (project folder)
+|   |
+|   |-- settings.py
+|   |-- urls.py

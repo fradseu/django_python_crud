@@ -1,0 +1,47 @@
+{% extends "requisicao_register/base.html "%}
+
+{% block content%}
+
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+        <tr>
+            <td>Nome do solicitante</td>
+            <td>Fábrica</td>
+            <td>Código da máquina</td>
+            <td>Setor</td>
+            <td>Tipo de prioridade</td>
+            <td>Descrição do problema</td>
+            <td>
+                <a href="{% url 'requisicao_insert' %}" class="btn btn-outline-success">
+                    <i class="fas fa-plus"></i> Novo
+                </a>
+            </td>
+        </tr>
+    </thead>
+    <body>
+        {% for requisicao in requisicao_list %}
+            <tr>
+                <td>{{requisicao.fullname}}</td>
+                <td>{{requisicao.factory}}</td>
+                <td>{{requisicao.machine_code}}</td>
+                <td>{{requisicao.sector}}</td>
+                <td>{{requisicao.priority_type}}</td>
+                <td>{{requisicao.issue_description}}</td>
+                <td>
+                    <a href="{% url 'requisicao_update' requisicao.id %}" class="btn text-secondary px-0">
+                        <i class="far fa-edit fa-lg"></i>
+                    </a>
+                    <form action="{% url 'requisicao_delete' requisicao.id %}" method="post" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn">
+                            <i class="far fa-trash-alt fa-lg text-danger float-right"></i>
+                        </button>
+                    </form> 
+                </td>
+            </tr>
+        {% endfor %}
+    </body>
+</table>
+
+{% endblock content%}
+
