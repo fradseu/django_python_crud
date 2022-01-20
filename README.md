@@ -1,9 +1,10 @@
 # django_python_crud
-Complete Django CRUD Operations
+Complete Django CRUD Operations.<br/>
+    Segui este vídeo para aprender os conceitos básicos. (Vídeo em inglês).
     <ul>
       <li><a href="https://www.youtube.com/watch?v=N6jzspc2kds">🎞 Vídeo Tutorial</a></li>
     </ul>    
-    Segui este vídeo para aprender os conceitos básicos. (Vídeo em inglês).
+
 
 <h2 align="left">📝 Tutorial de CRUD com FrameWork Django</h2>
 <br/>
